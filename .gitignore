@@ -1,0 +1,21 @@
+# Secrets — real values live in .env, never committed
+.env
+
+# Chat data is private: nothing under data/ is ever committed.
+# .gitkeep only keeps the empty folder in the repo.
+data/**
+!data/raw/
+!data/raw/.gitkeep
+
+# Python / uv
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Frontend (week 2+)
+node_modules/
+
+# OS / editor
+.DS_Store
+.vscode/
